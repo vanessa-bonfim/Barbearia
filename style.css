@@ -1,4 +1,42 @@
-body {}
+*{
+    box-sizing: border-box;
+}
+
+body, html{
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #BBBBBB;
+    padding: 20px 0;    
+}
+.caixa {
+    width: 940px;
+    position: relative;
+    margin: 0 auto;
+}
+nav {
+    position: absolute;
+    top: 110px;
+    right: 0; 
+}
+nav li {
+    display: inline;
+    margin: 0 0 0 15px;
+}
+nav a {
+    text-transform: uppercase;
+    color: #000000;
+    font-weight: bold;
+    font-size: 22px;
+    text-decoration: none;
+
+}
+nav a:hover{
+    color: #C78C19;
+    text-decoration: underline;
+}
 
 #img-banner {
     width: 100%;
@@ -16,7 +54,7 @@ body {}
     text-align: center
 }
 
-p {
+.principal p {
     text-align: center;
 }
 
@@ -37,7 +75,7 @@ em strong {
     padding: 20px;
 }
 
-ul {
+.beneficios ul {
     display: inline-block;
     /* O display inline block ocupa só o tamanho do conteúdo, mas me deixa mexer na largura e espaçamentos. */
     vertical-align: top;
@@ -47,4 +85,14 @@ ul {
 
 .imagem-beneficios {
     width: 50%;
+}
+footer {
+    text-align: center;
+    background: url('img_produtos/bg.jpg');
+    padding: 40px 0;
+}
+.copyright{
+    color: #ffffff;
+    font-size: 13px;
+    margin: 20px 0;
 }
