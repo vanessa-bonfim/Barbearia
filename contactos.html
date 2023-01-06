@@ -6,8 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="reset.css">
-    <link rel="stylesheet" href="contactos.css">
-    <title>contactos - Alura</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+
+    <title>Contactos - Barbearia Alura</title>
 </head>
 
 <body>
@@ -24,74 +26,78 @@
         </div>
     </header>
     <main>
-        <form action="">
-            <label for="nomesobrenome">Nome e Sobrenome</label>
-            <input type="text" id="nomesobrenome" class="input-padrao" required>
+        <div class="main-contacto">
+            <form action="">
+                <label for="nomesobrenome">Nome e Sobrenome</label>
+                <input type="text" id="nomesobrenome" class="input-padrao" required>
 
-            <label for="email">Email</label>
-            <input type="email" placeholder="seuemail@dominio.com" id="email" class="input-padrao" required>
+                <label for="email">Email</label>
+                <input type="email" placeholder="seuemail@dominio.com" id="email" class="input-padrao" required>
 
-            <label for="telefone">Telefone</label>
-            <input type="tel" placeholder="(xx)xxxxx-xxxx" id="telefone" class="input-padrao" required>
+                <label for="telefone">Telefone</label>
+                <input type="tel" placeholder="(xx)xxxxx-xxxx" id="telefone" class="input-padrao" required>
 
-            <label for="mensagem">Mensagem</label>
-            <textarea name="mensagem" id="mensagem" cols="60" rows="10" class="input-padrao" required></textarea>
+                <label for="mensagem">Mensagem</label>
+                <textarea name="mensagem" id="mensagem" cols="60" rows="10" class="input-padrao" required></textarea>
 
-            <fieldset>
-                <legend>Como prefere o nosso contacto?</legend>
+                <fieldset>
+                    <legend>Como prefere o nosso contacto?</legend>
 
-                <label for="radio-email">
-                    <input type="radio" name="contacto" value="email" id="radio-email">
-                    Email
-                </label>
-                
-                <label for="radio-ligacao">
-                    <input type="radio" name="contacto" value="telefone" id="radio-ligacao">
-                    Ligação
-                </label>
-                
-                <label for="radio-whatsapp">
-                    <input type="radio" name="contacto" value="whatsapp" id="radio-whatsapp" checked>
-                    WhatsApp
-                </label>               
-            </fieldset>                    
-            <fieldset>
-                <legend>Qual horário prefere ser atendido?</legend>
-                <select for="">
-                    <option value="">Matutino</option>
-                    <option value="">Vespertino</option>
-                    <option value="">Noturno</option>
-                </select> 
-            </fieldset>
+                    <label for="radio-email">
+                        <input type="radio" name="contacto" value="email" id="radio-email">
+                        Email
+                    </label>
 
-            <label class="checkbox"> <input type="checkbox" checked> Gostaria de receber nossas novidades por email?</label><br> <br>
+                    <label for="radio-ligacao">
+                        <input type="radio" name="contacto" value="telefone" id="radio-ligacao">
+                        Ligação
+                    </label>
 
-            <input type="submit" value="Enviar formulário" class="btn-enviar">
-        </form>
+                    <label for="radio-whatsapp">
+                        <input type="radio" name="contacto" value="whatsapp" id="radio-whatsapp" checked>
+                        WhatsApp
+                    </label>
+                </fieldset>
+                <fieldset>
+                    <legend>Qual horário prefere ser atendido?</legend>
+                    <select for="">
+                        <option value="">Matutino</option>
+                        <option value="">Vespertino</option>
+                        <option value="">Noturno</option>
+                    </select>
+                </fieldset>
 
-        <h2>Horário de funcionamento:</h2>
-        <table>
-           <thead>
-            <tr>
-                <th>Dias</th>
-                <th>Horário</th>
-            </tr>
-           </thead>
-            <tbody>
-                <tr>
-                    <td>Segunda</td>
-                    <td>8h ~ 18h</td>
-                </tr>
-                <tr>
-                    <td>Quarta</td>
-                    <td>8h ~ 18h</td>
-                </tr>
-                <tr>
-                    <td>Sexta</td>
-                    <td>8h ~ 18h</td>
-                </tr>
-            </tbody>
-        </table>
+                <label class="checkbox"> <input type="checkbox" checked> Gostaria de receber nossas novidades por
+                    email?</label><br> <br>
+
+                <input type="submit" value="Enviar formulário" class="btn-enviar">
+
+            </form>
+
+            <h2>Horário de funcionamento:</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Dias</th>
+                        <th>Horário</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Segunda</td>
+                        <td>8h ~ 18h</td>
+                    </tr>
+                    <tr>
+                        <td>Quarta</td>
+                        <td>8h ~ 18h</td>
+                    </tr>
+                    <tr>
+                        <td>Sexta</td>
+                        <td>8h ~ 18h</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
     </main>
     <footer>
         <img src="img_produtos/logo-branco.png" alt="Logo Barbearia Alura Rodapé">
